@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
     <title>My Portefolio</title>
 </head>
+
 <body>
-    
+
     <header>
         <div class="interface">
             <div class="logo">
                 <a href="#">
-                    <img src="Images/logo.jpg" alt="Logo da agência">
+                    <img src="Images/logo.jg" alt="Logo da agência">
                 </a>
             </div><!--logo-->
 
@@ -25,7 +32,7 @@
                     <li><a href="#">Start</a></li>
                     <li><a href="#">Tools</a></li>
                     <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>     
+                    <li><a href="#">Projects</a></li>
                 </ul>
             </nav>
 
@@ -34,6 +41,26 @@
                     <button>Contacts</button>
                 </a>
             </div>
+
+            <div class="btn-open-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-close">
+                    <i class="bi bi-x"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Start</a></li>
+                        <li><a href="#">Tools</a></li>
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="background-menu-overlay" id="background-menu-overlay"></div>
         </div><!--interface-->
     </header>
 
@@ -43,21 +70,21 @@
                 <div class="flex">
                     <div class="txt-top-site">
                         <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
-                        <p>A criatividade e a inovação são duas forças poderosas que impulsionam 
-                            A criatividade é a capacidade de pensar de forma original, de criar 
+                        <p>A criatividade e a inovação são duas forças poderosas que impulsionam
+                            A criatividade é a capacidade de pensar de forma original, de criar
                             ovas ideias e soluções para os desafios que enfrentamos.</p>
-                            <div class="btn-contact">
-                                <a href="#">
-                                    <button>Entre em contacto</button>
-                                </a>
-                            </div>
-                    </div>
-
-                        <div class="img-top-site">
-                            <img src="Images/logo.jpg" alt="">
+                        <div class="btn-contact">
+                            <a href="#">
+                                <button>Entre em contacto</button>
+                            </a>
                         </div>
                     </div>
+
+                    <div class="img-top-site">
+                        <img src="Images/logo.jpg" alt="">
+                    </div>
                 </div>
+            </div>
         </section><!--top-site-->
 
         <section class="specialities">
@@ -67,17 +94,20 @@
                     <div class="specialities-box">
                         <i class="bi bi-code-square"></i>
                         <h3>Website</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
                     </div>
                     <div class="specialities-box">
                         <i class="bi bi-cart"></i>
                         <h3>Online Store</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
                     </div>
                     <div class="specialities-box">
                         <i class="bi bi-wordpress"></i>
                         <h3>Blog</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
                     </div>
                 </div>
             </div>
@@ -92,7 +122,8 @@
                     </div>
                     <div class="txt-about">
                         <h2>MUITO PRAZER, <span>SOU PEDRO COSTA.</span></h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s</p>
                         <div class="btn-social">
                             <a href="#">
                                 <button>
@@ -110,6 +141,71 @@
             </div>
         </section>
 
+        <section class="portefolio">
+            <div class="interface">
+                <h2 class="title">MY <span>PORTEFOLIO.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(Images/logo.jpg);">
+                        <div class="overlay">
+                            Projeto 1
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(Images/logo.jpg);">
+                        <div class="overlay">
+                            Projeto 2
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(Images/logo.jpg);">
+                        <div class="overlay">
+                            Projeto 3
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="form">
+            <div class="interface">
+                <h2 class="title">TALK <span>WITH ME.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Your name" required>
+                    <input type="text" name="" id="" placeholder="Your email" required>
+                    <input type="text" name="" id="" placeholder="Your phone">
+                    <textarea name="" id="" placeholder="Your message" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="Images/logo.webp" alt="Logotipo">
+                    </div>
+                    <div class="btn-social">
+                        <a href="#">
+                            <button>
+                                <i class="bi bi-linkedin"></i>
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button><i class="bi bi-github"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="line-footer border">
+                <p><i class="bi bi-envelope-fill"></i><a href="mailto: contacto@pedro.com.pt">contacto@pedro.com.pt</a>
+                </p>
+            </div><!--line-footer-->
+        </div><!--interface-->
+    </footer>
 </body>
+
 </html>
