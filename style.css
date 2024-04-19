@@ -80,9 +80,9 @@ header nav.menu-desktop ul li{
     padding: 0 40px;
 }
 
-/*STYLE HEADER MENU-MOBILE*/
+/*STYLE MENU-MOBILE*/
 
-.btn-open-menu{
+.btn-open-menu i{
     color: #00FF08;
     font-size: 40px;
 }
@@ -100,10 +100,10 @@ header nav.menu-desktop ul li{
 }
 
 .menu-mobile.menu-open{
-    width: 70%;
+    width: 20%;
 }
 
-.menu-mobile.btn-open-menu ~ .background-menu-overlay{
+.menu-mobile.menu-open ~ .overlay-menu{
     display: block;
 }
 
@@ -133,8 +133,8 @@ header nav.menu-desktop ul li{
     color: #000;
 }
 
-.background-menu-overlay{
-    background-color: #00FF08;
+.overlay-menu{
+    background-color: #000000a7;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -142,48 +142,6 @@ header nav.menu-desktop ul li{
     left: 0;
     z-index: 88888;
     display: none;
-}
-
-
-/*ESTILO TOP SITE*/
-
-section.top-site{
-    padding: 40px 4%;
-}
-
-section.top-site .flex{
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-}
-
-.top-site h1{
-    color: #fff;
-    font-size: 42px;
-    line-height: 40px;
-}
-
-.top-site .txt-top-site h1 span{
-    color: #00FF08;
-}
-
-.top-site .txt-top-site p{
-    color: #fff;
-    margin: 40px 0%;
-}
-
-.top-site .img-top-site img{
-    position: relative;
-    animation: float 2s ease-in-out infinite alternate;
-}
-
-@keyframes float {
-    0%{
-        top: 0;
-    }
-    100%{
-        top: 30px;
-    }
 }
 
 /*STYLE OF SPECIALITIES*/
